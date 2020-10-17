@@ -1,8 +1,8 @@
 package project2;
 
 public class CPU {
-	private int speed;
-	public double price;
+	int speed;
+	private double price;
 	
 	public CPU(){
 		
@@ -16,5 +16,8 @@ public class CPU {
 	}
 	public void setSpeed(int speed){
 		this.speed=speed;
+	}
+	public void show() {
+		System.out.println("CPU Price:"+price+"RMB");
 	}
 }

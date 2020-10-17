@@ -17,12 +17,15 @@ public class PC {
 	public void setCPU(CPU cpu){
 		this.cpu=cpu;
 	}
-	public void setHardDisk(HardDisk HD){
+	public void setHardDisk(HardDisk HD) {
 		this.HD=HD;
-}
-	public void show(){
-	System.out.println("CPU speed"+cpu.getSpeed());
-	System.out.println("HD amount"+HD.getAmount());
-}
-}
+	}
 
+	public void show(){
+	System.out.println("CPU speed:"+cpu.getSpeed());
+	System.out.println("HD amount:"+HD.getAmount());
+	System.out.println("PC size:"+size);
+	System.out.println("PC name:"+name);
+	
+}
+}
