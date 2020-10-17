@@ -90,8 +90,8 @@ public void show(){
 	System.out.println("PC name:"+name);
 }
  ```
- ## 核心方法
- 创建Test类，在main方法下，添加CPU,PC,HardDisk对象
+ ## 3.核心方法
+ 创建Test类，在main方法下，添加CPU,PC,HardDisk对象，调用其方法
 ```
 		CPU cpu=new CPU(120.68);
 		HardDisk HD=new HardDisk(18);
@@ -103,21 +103,21 @@ public void show(){
 		cpu.show();
 		pc.show();
 		HD.show();
-```	
-## 实验结果
 ```
+  ## 4.实验结果
+ ```
 CPU Price:120.68RMB
 CPU speed:3000
 HD amount:800
 PC size:180.0
 PC name:Apple
 HardDisk cache:18M
-```
-## 实验感想
-+ 1.通过这次实验学习到了关于访问权限的不同，public,protected,private修饰符。
+ ```
+ ## 5.实验感想
+ + 1.通过这次实验学习到了关于访问权限的不同，public,protected,private修饰符。
 + 2.熟悉构造方法和普通方法的使用。
 + 3.学习了不同的基本数据类型，int,float,double,String等。
 + 4.知道了把多个类放置在不同的包中以及import用法。
 + 5.了解了如何通过GitHub上传Java作业。
-
+ 
  
