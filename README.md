@@ -1,20 +1,39 @@
 # JavaTask
+2020322062 计G201 苗广汉
   ## 1.实验内容
   + 1.基本要求是完成教材P110页的第四题关于PC、cpu,及其他模拟的程序。
   + 2.附加要求是每个类定义不少于2个属性，且属性的类型应该多样化。
   + 3.根据课堂中关于访问权限的内容，尝试定义属性的修饰符多样化，类中定义方法操作属性，避免直接通过“类对象.属性”的形式访问属性值；且定义的方法内应该有符合常理的逻辑判断。
   + 4.尝试把本次实验的多个类放置在不同的包中，体会修饰符private的用法。
   ## 2.实验设计
-  + 1.给CPU添加speed,price对象，给CPU对象添加方法
+  + 1.给CPU添加speed,price属性
   ```
-public int getSpeed(){
+int speed;
+private double price;
+  ```
+  给CPU添加构造方法
+  ``` 
+public CPU(){
+		
+	}
+public CPU(double price){
+	this.price=price;
+	}
+  ```
+  给CPU添加方法
+  ```
+  	public int getSpeed(){
 		return speed;
 	}
-public void setSpeed(int speed){
+	public void setSpeed(int speed){
 		this.speed=speed;
 	}
+	public void show() {
+		System.out.println("CPU Price:"+price+"RMB");
+	}
+}
   ```
- + 2.给HardDisk添加amount,price对象，给HardDisk对象添加方法
+ + 2.给HardDisk添加amount,price属性
  ```
 public int getAmount(){
 		return amount;
